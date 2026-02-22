@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CSCN71020_A2/x64/Debug
+/CSCN71020_A2/.vs/BCSRec/v18/TestStore/0
+/CSCN71020_A2/.vs/BCSRec/v18
+/CSCN71020_A2/.vs/BCSRec/FileContentIndex
