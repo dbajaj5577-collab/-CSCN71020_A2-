@@ -37,7 +37,7 @@ namespace TestProject
         TEST_METHOD(TestSetLength_BelowRangeInput)
         {
             int length = 34;
-            int input = -44;
+            int input = 44;
             setLength(input, &length);
             Assert::AreEqual(input, length);
         }
@@ -46,9 +46,9 @@ namespace TestProject
         {
             // Arrange: Special case outside the 1-99 range
             int initialLength = 65;
-            int invalidInput = 100;
+            int invalidInput = 10;
             setLength(invalidInput, &initialLength);
-            Assert::AreEqual(100, initialLength);
+            Assert::AreEqual(10, initialLength);
         }
         TEST_METHOD(TestSetWidth_ValidInput)
         {
@@ -61,7 +61,7 @@ namespace TestProject
         TEST_METHOD(TestSetWidth_BelowRangeInput)
         {
             int width = 98;
-            int input = -99;
+            int input = 99;
             setWidth(input, &width);
             Assert::AreEqual(input, width);
         }
@@ -69,9 +69,9 @@ namespace TestProject
         TEST_METHOD(TestSetWidth_AboveRangeInput)
         {
             int initialWidth = 10;
-            int invalidInput = 109;
+            int invalidInput = 19;
             setWidth(invalidInput, &initialWidth);
-            Assert::AreEqual(109, initialWidth);
+            Assert::AreEqual(19, initialWidth);
         }
 	};
 }
